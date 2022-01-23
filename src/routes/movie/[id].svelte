@@ -58,6 +58,11 @@
 	img {
 		width: 100%;
 		border-radius: 1rem;
+		transition: 200ms ease-in-out;
+	}
+
+	img:hover {
+		box-shadow: 0 0 11px rgba(255, 255, 255, 0.3);
 	}
 
 	.movie-detail {

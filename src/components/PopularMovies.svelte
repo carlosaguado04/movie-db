@@ -3,7 +3,9 @@
 	export let popular;
 </script>
 
-<h3>Popular Movies</h3>
+<div class="title">
+	<h3>Popular Now</h3>
+</div>
 <div class="popular-movies">
 	{#each popular as movie}
 		<MovieCard {movie} />
@@ -11,8 +13,11 @@
 </div>
 
 <style>
-	h3 {
-		padding: 0 1rem;
+	.title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 2rem 0;
 	}
 
 	.popular-movies {

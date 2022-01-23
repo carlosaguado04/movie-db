@@ -17,26 +17,36 @@
 	}
 </script>
 
-<form on:submit|preventDefault={submitSearch} class="search">
-	{#if !active}
-		<label in:fly={{ y: -10, duration: 500 }} out:fly={{ y: -10, duration: 500 }} for="search_movie"
-			>Search Movies</label
-		>
-	{/if}
-	<input
-		on:blur={cancelInactive}
-		on:focus={() => (active = true)}
-		bind:value={inputValue}
-		name="search_movie"
-		type="text"
-		class={active ? 'selected' : ''}
-	/>
-	{#if inputValue}
-		<button in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}>Search</button>
-	{/if}
-</form>
+<div class="search-form">
+	<form on:submit|preventDefault={submitSearch} class="search">
+		{#if !active}
+			<label
+				in:fly={{ y: -10, duration: 500 }}
+				out:fly={{ y: -10, duration: 500 }}
+				for="search_movie">Search Movies and Series</label
+			>
+		{/if}
+		<input
+			on:blur={cancelInactive}
+			on:focus={() => (active = true)}
+			bind:value={inputValue}
+			name="search_movie"
+			type="text"
+			class={active ? 'selected' : ''}
+		/>
+		{#if inputValue}
+			<button in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}>Search</button>
+		{/if}
+	</form>
+</div>
 
 <style>
+	.search-form {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
 	.search {
 		position: relative;
 		width: 30%;
@@ -79,11 +89,12 @@
 		position: absolute;
 		font-size: 0.8rem;
 		top: 50%;
-		left: 0;
+		left: 20%;
 		transform: translate(0, -50%);
 		pointer-events: none;
 		color: rgb(255, 255, 255);
 		padding: 0rem 1rem;
+		text-transform: uppercase;
 	}
 
 	input.selected {

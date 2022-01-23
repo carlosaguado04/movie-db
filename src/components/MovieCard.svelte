@@ -25,6 +25,7 @@
 
 	img:hover {
 		transform: scale(1.05);
+		box-shadow: 0 0 11px rgba(255, 255, 255, 0.3);
 	}
 
 	h2 {
