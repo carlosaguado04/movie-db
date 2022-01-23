@@ -28,6 +28,8 @@
 	{#each searchedMovie as movie}
 		<MovieCard {movie} />
 	{/each}
+</div>
+<div class="footer">
 	<Footer />
 </div>
 
@@ -37,6 +39,6 @@
 		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		grid-column-gap: 1rem;
 		grid-row-gap: 2rem;
-		height: 20vh;
+		width: 100%;
 	}
 </style>
