@@ -4,37 +4,38 @@
 			`https://api.themoviedb.org/3/movie/${params.id}?api_key=29fe3343109db62f7473a92c31283a1f&language=en-US`
 		);
 
-		const movieDetails = await res.json();
+		const movieDetail = await res.json();
 		if (res.ok) {
 			return {
-				props: { movieDetails }
+				props: { movieDetail }
 			};
 		}
 	}
 </script>
 
 <script>
-	export let movieDetails;
+	export let movieDetail;
+	import { fly } from 'svelte/transition';
 </script>
 
-<div class="movie-details">
+<div class="movie-detail" in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
 	<div class="img-container">
 		<img
-			src={'https://image.tmdb.org/t/p/original' + movieDetails.backdrop_path}
-			alt={movieDetails.title}
+			src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
+			alt={movieDetail.title}
 		/>
 	</div>
 	<div class="txt-container">
-		<h1>{movieDetails.title}</h1>
-		<p class="overview">{movieDetails.overview}</p>
+		<h1>{movieDetail.title}</h1>
+		<p class="overview">{movieDetail.overview}</p>
 		<p>
 			<span>Release date:</span>
-			{movieDetails.release_date} <br />
-			<span>Budget:</span> ${movieDetails.budget} <br />
+			{movieDetail.release_date} <br />
+			<span>Budget:</span> ${movieDetail.budget} <br />
 			<span>Rating:</span>
-			{movieDetails.vote_average} <br />
+			{movieDetail.vote_average} <br />
 			<span>Runtime: </span>
-			{movieDetails.runtime}mins
+			{movieDetail.runtime}mins
 		</p>
 	</div>
 </div>
@@ -48,7 +49,7 @@
 		padding: 1rem 0rem;
 	}
 
-	.img-continer {
+	.img-container {
 		width: 100%;
 	}
 
@@ -57,7 +58,7 @@
 		border-radius: 1rem;
 	}
 
-	.movie-details {
+	.movie-detail {
 		margin: 2rem 20%;
 	}
 
