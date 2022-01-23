@@ -15,6 +15,7 @@
 
 <script>
 	import MovieCard from '../../components/MovieCard.svelte';
+	import Footer from '../../components/Footer.svelte';
 	export let searchedMovie;
 	import { fly } from 'svelte/transition';
 </script>
@@ -27,6 +28,7 @@
 	{#each searchedMovie as movie}
 		<MovieCard {movie} />
 	{/each}
+	<Footer />
 </div>
 
 <style>

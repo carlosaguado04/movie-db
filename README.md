@@ -1,1 +1,1 @@
-# This is a personal project to get acquainted with Svelte
+# Simple Svelte exercise

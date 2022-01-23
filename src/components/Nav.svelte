@@ -1,5 +1,5 @@
 <nav>
-	<a href="/">Carlos/MovieDB</a>
+	<a href="/">All Movies & Series</a>
 </nav>
 
 <style>

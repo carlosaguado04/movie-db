@@ -15,6 +15,7 @@
 
 <script>
 	export let movieDetail;
+	import Footer from '../../components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 </script>
 
@@ -39,6 +40,7 @@
 		</p>
 	</div>
 </div>
+<Footer />
 
 <style>
 	h1 {

@@ -4,8 +4,11 @@
 </script>
 
 <svelte:head>
-	<title>Carlos/MovieDB</title>
+	<title>All Movies & Seriess</title>
 </svelte:head>
 
 <Nav />
-<slot />
+
+<main>
+	<slot />
+</main>
