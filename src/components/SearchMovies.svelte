@@ -89,8 +89,8 @@
 		position: absolute;
 		font-size: 0.8rem;
 		top: 50%;
-		left: 31%;
-		transform: translate(0, -50%);
+		left: 50%;
+		transform: translate(-50%, -50%);
 		pointer-events: none;
 		color: rgb(255, 255, 255);
 		padding: 0rem 1rem;
