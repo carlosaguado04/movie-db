@@ -23,7 +23,7 @@
 			<label
 				in:fly={{ y: -10, duration: 500 }}
 				out:fly={{ y: -10, duration: 500 }}
-				for="search_movie">Search Movies and Series</label
+				for="search_movie">Search Movies</label
 			>
 		{/if}
 		<input
@@ -54,9 +54,9 @@
 	}
 
 	button {
-		font-size: 0.7rem;
+		font-size: 0.8rem;
 		padding: 0rem 1rem;
-		background: rgb(95, 205, 249);
+		background: lightgreen;
 		color: #333;
 		font-weight: bold;
 		border: none;
@@ -64,7 +64,7 @@
 		bottom: 50%;
 		right: 0;
 		transform: translate(0, 50%);
-		height: 100%;
+		height: 99%;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		cursor: pointer;
@@ -72,7 +72,7 @@
 
 	input {
 		width: 100%;
-		border: none;
+		border: 1px solid white;
 		font-size: 1rem;
 		font-family: 'Josefin Sans', sans-serif;
 		outline: none;
@@ -89,7 +89,7 @@
 		position: absolute;
 		font-size: 0.8rem;
 		top: 50%;
-		left: 20%;
+		left: 31%;
 		transform: translate(0, -50%);
 		pointer-events: none;
 		color: rgb(255, 255, 255);
