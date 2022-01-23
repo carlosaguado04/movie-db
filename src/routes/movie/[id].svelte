@@ -15,7 +15,6 @@
 
 <script>
 	export let movieDetails;
-	console.log(movieDetails);
 </script>
 
 <div class="movie-details">
@@ -27,5 +26,42 @@
 	</div>
 	<div class="txt-container">
 		<h1>{movieDetails.title}</h1>
+		<p class="overview">{movieDetails.overview}</p>
+		<p>
+			<span>Release date:</span>
+			{movieDetails.release_date} <br />
+			<span>Budget:</span> ${movieDetails.budget} <br />
+			<span>Rating:</span>
+			{movieDetails.vote_average} <br />
+			<span>Runtime: </span>
+			{movieDetails.runtime}mins
+		</p>
 	</div>
 </div>
+
+<style>
+	h1 {
+		padding: 1rem 0rem 2rem;
+	}
+
+	p {
+		padding: 1rem 0rem;
+	}
+
+	.img-continer {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+		border-radius: 1rem;
+	}
+
+	.movie-details {
+		margin: 2rem 20%;
+	}
+
+	span {
+		font-weight: bold;
+	}
+</style>

@@ -18,6 +18,11 @@
 		object-fit: cover;
 		border-radius: 1rem;
 		margin-bottom: 1rem;
+		transition: ease 200ms;
+	}
+
+	img:hover {
+		transform: scale(1.05);
 	}
 
 	h2 {
