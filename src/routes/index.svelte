@@ -15,14 +15,16 @@
 
 <script>
 	import PopularMovies from '../components/PopularMovies.svelte';
-	import SearchMovies from '../components/SearchMovies.svelte';
+	import NextButton from '../components/NextButton.svelte';
 	import Footer from '../components/Footer.svelte';
 	export let popular;
 	import { fly } from 'svelte/transition';
+	import SearchMovies from '../components/SearchMovies.svelte';
 </script>
 
 <section in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
 	<SearchMovies />
 	<PopularMovies {popular} />
+	<NextButton />
 	<Footer />
 </section>
