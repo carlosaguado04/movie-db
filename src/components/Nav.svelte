@@ -14,7 +14,7 @@
 		font-size: 1rem;
 		font-weight: bold;
 		font-family: 'Josefin Sans', sans-serif;
-		color: black;
+		color: white;
 		text-decoration: none;
 	}
 </style>

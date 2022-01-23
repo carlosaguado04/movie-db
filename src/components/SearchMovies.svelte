@@ -46,8 +46,8 @@
 	button {
 		font-size: 0.7rem;
 		padding: 0rem 1rem;
-		background: rgb(96, 110, 201);
-		color: white;
+		background: rgb(95, 205, 249);
+		color: #333;
 		font-weight: bold;
 		border: none;
 		position: absolute;
@@ -70,7 +70,7 @@
 		padding: 0.5rem 0.1rem;
 		transition: background 0.75s ease-out;
 		font-weight: bold;
-		background: rgb(63, 63, 63);
+		background: rgba(63, 63, 63, 0);
 		border-radius: 10px;
 		padding: 1rem;
 	}
