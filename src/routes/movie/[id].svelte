@@ -24,6 +24,7 @@
 		<img
 			src={'https://image.tmdb.org/t/p/original' + movieDetail.backdrop_path}
 			alt={movieDetail.title}
+			class="in"
 		/>
 	</div>
 	<div class="txt-container">
@@ -59,10 +60,7 @@
 		width: 100%;
 		border-radius: 1rem;
 		transition: 200ms ease-in-out;
-	}
-
-	img:hover {
-		box-shadow: 0 0 11px rgba(255, 255, 255, 0.3);
+		position: relative;
 	}
 
 	.movie-detail {
