@@ -50,14 +50,18 @@
 
 	p {
 		padding: 1rem 0rem;
+		font-size: 1.25rem;
+		text-align: justify;
 	}
 
 	.img-container {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 
 	img {
-		width: 100%;
+		width: 80%;
 		border-radius: 1rem;
 		transition: 200ms ease-in-out;
 		position: relative;
