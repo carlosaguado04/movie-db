@@ -53,7 +53,7 @@
 
 	p {
 		padding: 1rem 0rem;
-		font-size: 1.25rem;
+		font-size: 1rem;
 		text-align: justify;
 	}
 
@@ -64,7 +64,7 @@
 	}
 
 	img {
-		width: 80%;
+		width: 70%;
 		border-radius: 1rem;
 		transition: 200ms ease-in-out;
 		position: relative;
@@ -72,6 +72,7 @@
 
 	.series-detail {
 		margin: 2rem 20%;
+		height: 75vh;
 	}
 
 	span {

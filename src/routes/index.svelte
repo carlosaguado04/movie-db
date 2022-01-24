@@ -27,7 +27,7 @@
 
 <style>
 	.main {
-		height: 75vh;
+		height: 82.2vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;

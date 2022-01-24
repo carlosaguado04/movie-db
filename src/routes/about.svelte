@@ -11,7 +11,7 @@
 		<div class="text">
 			<p>
 				This is a personal project, it does not have another purpose other than my practice and
-				hobbie
+				hobbies
 			</p>
 			<br />
 			<p>I'm still working on this project so more features are coming soon...</p>
@@ -29,7 +29,7 @@
 
 <style>
 	.main-about {
-		height: 75vh;
+		height: 82.2vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
