@@ -4,7 +4,7 @@
 
 <div class="page">
 	<div class="movie-card">
-		<a sveltekit:prefetch sveltekit:noscroll href={'/movie/' + movie.id}>
+		<a sveltekit:prefetch href={'/movie/' + movie.id}>
 			<img src={'https://image.tmdb.org/t/p/w500' + movie.poster_path} alt={movie.title} /></a
 		>
 		<div class="description">
