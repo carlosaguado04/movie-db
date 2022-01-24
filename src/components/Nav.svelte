@@ -3,7 +3,7 @@
 		<a href="/">AMDB</a>
 	</div>
 	<ul class="nav-links">
-		<li class="nav-link"><a href="/">Home</a></li>
+		<li class="nav-link"><a href="/about">About</a></li>
 		<li class="nav-link"><a href="/movies">Movies</a></li>
 		<li class="nav-link"><a href="/series">Series</a></li>
 	</ul>
