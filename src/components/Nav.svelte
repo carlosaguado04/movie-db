@@ -5,7 +5,7 @@
 	<ul class="nav-links">
 		<li class="nav-link"><a href="/about">About</a></li>
 		<li class="nav-link"><a href="/movies">Movies</a></li>
-		<li class="nav-link"><a href="/series">Series</a></li>
+		<li class="nav-link"><a href="/series">TV Shows</a></li>
 	</ul>
 </nav>
 
