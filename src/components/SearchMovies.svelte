@@ -23,7 +23,7 @@
 			<label
 				in:fly={{ y: -10, duration: 500 }}
 				out:fly={{ y: -10, duration: 500 }}
-				for="search_movie">Search Movies</label
+				for="search_movie">Search for Movies and TV Shows</label
 			>
 		{/if}
 		<input
@@ -35,7 +35,9 @@
 			class={active ? 'selected' : ''}
 		/>
 		{#if inputValue}
-			<button in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}>Search</button>
+			<button in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}
+				><i class="fa-solid fa-magnifying-glass" /></button
+			>
 		{/if}
 	</form>
 </div>
@@ -49,14 +51,14 @@
 
 	.search {
 		position: relative;
-		width: 30%;
+		width: 50%;
 		margin: 1rem;
 	}
 
 	button {
-		font-size: 0.8rem;
+		font-size: 1.5rem;
 		padding: 0rem 1rem;
-		background: lightgreen;
+		background: white;
 		color: #333;
 		font-weight: bold;
 		border: none;
@@ -88,6 +90,7 @@
 	label {
 		position: absolute;
 		font-size: 0.8rem;
+		font-weight: 700;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
@@ -95,6 +98,19 @@
 		color: rgb(255, 255, 255);
 		padding: 0rem 1rem;
 		text-transform: uppercase;
+	}
+
+	.icon {
+		width: 20%;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		background: white;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		color: black;
 	}
 
 	input.selected {
