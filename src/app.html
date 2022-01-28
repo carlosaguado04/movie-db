@@ -10,4 +10,17 @@
 	<body>
 		<div id="svelte">%svelte.body%</div>
 	</body>
+
+	<script src="https://cdn.blobity.dev/by.js"></script>
+	<script>
+		const blobity = new Blobity({
+			licenseKey: '...',
+			color: 'rgb(55, 55, 55)',
+			opacity: '1',
+			dotColor: 'lightgreen',
+			size: '55',
+			focusableElementsOffsetX: '20',
+			focusableElementsOffsetY: '20'
+		});
+	</script>
 </html>
