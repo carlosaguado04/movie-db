@@ -4,7 +4,7 @@
 
 <div class="page">
 	<div class="series-card">
-		<a sveltekit:prefetch href={'/series/' + series.id}>
+		<a data-no-blobity sveltekit:prefetch href={'/series/' + series.id}>
 			<img src={'https://image.tmdb.org/t/p/w500' + series.poster_path} alt={series.title} /></a
 		>
 		<div class="description">
