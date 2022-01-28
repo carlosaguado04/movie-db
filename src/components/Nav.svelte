@@ -36,8 +36,7 @@
 	}
 
 	.nav-link a:hover {
-		border-bottom: 2px solid #f2e863;
-		color: #f2e863;
+		color: #333;
 	}
 
 	.logo-container {
@@ -55,6 +54,6 @@
 	}
 
 	.logo-container a:hover {
-		color: orange;
+		color: #333;
 	}
 </style>
