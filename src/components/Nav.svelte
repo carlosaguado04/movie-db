@@ -33,10 +33,11 @@
 		justify-content: space-between;
 		border: 2px solid rgba(0, 0, 0, 0);
 		list-style: none;
+		z-index: 999;
 	}
 
 	.nav-link a:hover {
-		color: #333;
+		color: rgb(27, 255, 131);
 	}
 
 	.logo-container {
@@ -51,9 +52,10 @@
 		color: white;
 		text-decoration: none;
 		transition: ease-in-out 200ms;
+		z-index: 999;
 	}
 
 	.logo-container a:hover {
-		color: #333;
+		color: rgb(27, 255, 131);
 	}
 </style>

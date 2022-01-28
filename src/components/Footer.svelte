@@ -54,6 +54,7 @@
 		font-size: 10px;
 		letter-spacing: 0.05ch;
 		text-transform: uppercase;
+		z-index: 999;
 	}
 
 	.carlos a {
@@ -61,8 +62,16 @@
 		color: white;
 	}
 
+	.carlos:hover a {
+		color: rgb(27, 255, 131);
+	}
+
 	.footer {
 		min-height: 10vh;
+	}
+
+	.tmdb {
+		z-index: 999;
 	}
 
 	.tmdb svg {
@@ -72,6 +81,10 @@
 	.tmdb a {
 		text-decoration: none;
 		color: white;
+	}
+
+	.tmdb:hover a {
+		color: rgb(27, 255, 131);
 	}
 
 	span {
