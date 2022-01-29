@@ -1,6 +1,6 @@
 <nav>
 	<div class="logo-container">
-		<a href="/">AMDB</a>
+		<a data-blobity-tooltip="Home" data-blobity-font="" href="/">AMDB</a>
 	</div>
 	<ul class="nav-links">
 		<li class="nav-link"><a href="/about">About</a></li>
@@ -24,16 +24,14 @@
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
 		text-decoration: none;
-		transition: ease 200ms;
 	}
 
 	.nav-links {
 		display: flex;
 		width: 30%;
 		justify-content: space-between;
-		border: 2px solid rgba(0, 0, 0, 0);
+
 		list-style: none;
-		z-index: 999;
 	}
 
 	.nav-link a:hover {
@@ -52,7 +50,6 @@
 		color: white;
 		text-decoration: none;
 		transition: ease-in-out 200ms;
-		z-index: 999;
 	}
 
 	.logo-container a:hover {
