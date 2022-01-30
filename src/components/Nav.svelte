@@ -1,11 +1,22 @@
+<script>
+	import { page } from '$app/stores';
+	//
+</script>
+
 <nav>
 	<div class="logo-container">
-		<a data-blobity-tooltip="Home" data-blobity-font="" href="/">AMDB</a>
+		<a data-blobity-tooltip="Home" href="/">AMDB</a>
 	</div>
 	<ul class="nav-links">
-		<li class="nav-link"><a href="/about">About</a></li>
-		<li class="nav-link"><a href="/movies">Movies</a></li>
-		<li class="nav-link"><a href="/series">TV Shows</a></li>
+		<li class="nav-link">
+			<a class:active={$page.url.pathname === '/about'} href="/about">About</a>
+		</li>
+		<li class="nav-link">
+			<a class:active={$page.url.pathname === '/movies'} href="/movies">Movies</a>
+		</li>
+		<li class="nav-link">
+			<a class:active={$page.url.pathname === '/series'} href="/series">TV Shows</a>
+		</li>
 	</ul>
 </nav>
 
@@ -54,5 +65,9 @@
 
 	.logo-container a:hover {
 		color: rgb(27, 255, 131);
+	}
+
+	.active {
+		color: red;
 	}
 </style>

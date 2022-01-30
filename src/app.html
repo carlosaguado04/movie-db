@@ -9,5 +9,20 @@
 	</head>
 	<body>
 		<div id="svelte">%svelte.body%</div>
+
+		<script src="https://cdn.blobity.dev/by.js?licenseKey=..."></script>
+		<script>
+			const options = {
+				color: 'rgb(66, 66, 66)',
+				dotColor: 'rgb(27, 255, 131)',
+				focusableElementsOffsetX: '10',
+				focusableElementsOffsetY: '10',
+				fontSize: '20',
+				fontColor: '#ffffff',
+				font: 'Josefin Sans',
+				fontWeight: '700'
+			};
+			new Blobity(options);
+		</script>
 	</body>
 </html>
