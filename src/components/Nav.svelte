@@ -5,23 +5,21 @@
 
 <nav>
 	<div class="logo-container">
-		<a data-blobity-tooltip="Home" href="/">AMDB</a>
+		<a data-blobity-tooltip="Home" href="/">
+			<i class="fa-solid fa-clapperboard"></i>
+			AMDB
+		</a>
+
 	</div>
 	<ul class="nav-links">
 		<li  class="nav-link" >
-			<a data-blobity-tooltip="About"   href="/about">
-				<ion-icon name="information-circle"></ion-icon>
-			</a>
+			<a  href="/movies">movies</a>
 		</li>
 		<li class="nav-link">
-			<a data-blobity-tooltip="Movies"  href="/movies">
-				<ion-icon name="videocam"></ion-icon>
-			</a>
+			<a  href="/series">series</a>
 		</li>
 		<li class="nav-link">
-			<a data-blobity-tooltip="Series"   href="/series">
-				<ion-icon name="tv"></ion-icon>
-			</a>
+			<a href="/about">about</a>
 		</li>
 	</ul>
 </nav>
@@ -37,7 +35,7 @@
 	}
 
 	.nav-link a {
-		font-size: 2.5rem;
+		font-size: 2rem;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
 		text-decoration: none;

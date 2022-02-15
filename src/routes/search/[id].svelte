@@ -15,7 +15,6 @@
 
 <script>
 	import MovieCard from '../../components/MovieCard.svelte';
-	import Footer from '../../components/Footer.svelte';
 	export let searchedMovie;
 	import { fly } from 'svelte/transition';
 </script>
@@ -29,9 +28,7 @@
 		<MovieCard {movie} />
 	{/each}
 </div>
-<div class="footer">
-	<Footer />
-</div>
+
 
 <style>
 	.searched-movies {
@@ -40,5 +37,6 @@
 		grid-column-gap: 1rem;
 		grid-row-gap: 2rem;
 		width: 100%;
+		overflow: hidden;
 	}
 </style>

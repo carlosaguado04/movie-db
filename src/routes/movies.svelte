@@ -16,7 +16,6 @@
 <script>
 	import PopularMovies from '../components/PopularMovies.svelte';
 	import NextButton from '../components/NextButton.svelte';
-	import Footer from '../components/Footer.svelte';
 	export let popular;
 	import { fly } from 'svelte/transition';
 	import SearchMovies from '../components/SearchMovies.svelte';
@@ -26,5 +25,5 @@
 	<SearchMovies />
 	<PopularMovies {popular} />
 	<NextButton />
-	<Footer />
+
 </section>

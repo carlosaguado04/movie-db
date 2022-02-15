@@ -47,7 +47,7 @@
 		justify-content: space-around;
 		align-items: center;
 		width: 100%;
-		height: 8vh;
+		height: 10vh;
 	}
 
 	.carlos {

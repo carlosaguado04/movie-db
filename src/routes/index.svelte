@@ -1,5 +1,4 @@
 <script>
-	import Footer from '../components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 	import SearchMovies from '../components/SearchMovies.svelte';
 	import Blobity from 'blobity';
@@ -28,13 +27,12 @@
 <section class="main" in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
 	<SearchMovies />
 </section>
-<Footer />
 
 </body>
 
 <style>
 	.main {
-		height: 82.2vh;
+		height: 80vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;

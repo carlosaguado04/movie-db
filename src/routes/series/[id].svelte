@@ -16,7 +16,6 @@
 
 <script>
 	export let seriesDetail;
-	import Footer from '../../components/Footer.svelte';
 	import { fly } from 'svelte/transition';
 </script>
 
@@ -44,15 +43,15 @@
 		</p>
 	</div>
 </div>
-<Footer />
+
 
 <style>
 	h1 {
-		padding: 1rem 0rem 2rem;
+		padding: 1rem  2rem;
 	}
 
 	p {
-		padding: 1rem 0rem;
+		padding: 1rem ;
 		font-size: 1rem;
 		text-align: justify;
 	}

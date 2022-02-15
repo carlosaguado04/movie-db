@@ -1,6 +1,5 @@
 <script>
 	import { fly } from 'svelte/transition';
-	import Footer from '../components/Footer.svelte';
 </script>
 
 <div in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }} class="main-about">
@@ -25,7 +24,7 @@
 		</div>
 	</div>
 </div>
-<Footer />
+
 
 <style>
 	.main-about {

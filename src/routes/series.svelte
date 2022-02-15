@@ -16,8 +16,6 @@
 
 <script>
 	import PopularSeries from '../components/PopularSeries.svelte';
-
-	import Footer from '../components/Footer.svelte';
 	export let popular;
 	import { fly } from 'svelte/transition';
 </script>
@@ -25,5 +23,4 @@
 <section in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500 }}>
 	<PopularSeries {popular} />
 
-	<Footer />
 </section>
