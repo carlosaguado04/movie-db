@@ -3,10 +3,12 @@
 	import { fly } from 'svelte/transition';
 	import SearchMovies from '../components/SearchMovies.svelte';
 	import Blobity from 'blobity';
+	import { browser } from '$app/env';
 
+	if (browser){
 	const options = {
 		color: 'rgb(51, 51, 51)',
-		zIndex: '1',
+		zIndex: '998',
 		dotColor: 'lightgreen',
 		fontColor: '#ffffff',
 		fontSize: '25',
@@ -18,6 +20,8 @@
 
 	};
 	new Blobity(options);
+}
+
 
 </script>
 <body>
