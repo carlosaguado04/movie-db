@@ -23,7 +23,7 @@
 			<label
 				in:fly={{ y: -10, duration: 500 }}
 				out:fly={{ y: -10, duration: 500 }}
-				for="search_movie">Search for Movies and Series</label
+				>Search for Movies and Series</label
 			>
 		{/if}
 		<input
@@ -36,7 +36,7 @@
 		/>
 		{#if inputValue}
 			<button data-no-blobity in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}
-				><i class="fa-solid fa-magnifying-glass" /></button
+				><i class="fa-solid fa-magnifying-glass"></i></button
 			>
 		{/if}
 	</form>
@@ -57,8 +57,8 @@
 
 	button {
 		font-size: 1.5rem;
-		padding: 0rem 1rem;
-		background: white;
+		padding:  1rem;
+		background: lightgreen;
 		color: #333;
 		font-weight: bold;
 		border: none;
@@ -74,12 +74,11 @@
 
 	input {
 		width: 100%;
-		border: 1px solid white;
+		border: 1px solid lightgreen;
 		font-size: 1rem;
 		font-family: 'Josefin Sans', sans-serif;
 		outline: none;
-		color: rgb(255, 255, 255);
-		padding: 0.5rem 0.1rem;
+		color: lightgreen;
 		transition: background 0.75s ease-out;
 		font-weight: bold;
 		background: rgba(63, 63, 63, 0);
@@ -95,25 +94,19 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		pointer-events: none;
-		color: rgb(255, 255, 255);
-		padding: 0rem 1rem;
+		color: lightgreen;
+		padding:  1rem;
 		text-transform: uppercase;
 	}
 
-	.icon {
-		width: 20%;
-		position: absolute;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
-		background: white;
+	i {
+		background: lightgreen;
 		border-top-left-radius: 10px;
 		border-bottom-left-radius: 10px;
-		color: black;
+		color: rgb(51, 51, 51);
 	}
 
 	input.selected {
-		background: rgb(50, 50, 50);
+		background: rgb(51, 51, 51);
 	}
 </style>

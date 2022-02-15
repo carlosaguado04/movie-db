@@ -8,9 +8,9 @@
 	if (browser){
 	const options = {
 		color: 'rgb(51, 51, 51)',
-		zIndex: '998',
+		zIndex: '1',
 		dotColor: 'lightgreen',
-		fontColor: '#ffffff',
+		fontColor: '#1BFF83',
 		fontSize: '25',
 		tooltipPadding: '15',
 		font: 'Josefin Sans',

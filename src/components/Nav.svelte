@@ -1,6 +1,6 @@
 <script>
-	import { page } from '$app/stores';
-	//
+
+
 </script>
 
 <nav>
@@ -8,14 +8,20 @@
 		<a data-blobity-tooltip="Home" href="/">AMDB</a>
 	</div>
 	<ul class="nav-links">
-		<li class="nav-link">
-			<a class:active={$page.url.pathname === '/about'} href="/about">About</a>
+		<li  class="nav-link" >
+			<a data-blobity-tooltip="About"   href="/about">
+				<i class="fa-solid fa-info"></i>
+			</a>
 		</li>
 		<li class="nav-link">
-			<a class:active={$page.url.pathname === '/movies'} href="/movies">Movies</a>
+			<a data-blobity-tooltip="Movies"  href="/movies">
+				<i class="fa-solid fa-film"></i>
+			</a>
 		</li>
 		<li class="nav-link">
-			<a class:active={$page.url.pathname === '/series'} href="/series">TV Shows</a>
+			<a data-blobity-tooltip="Series"   href="/series">
+				<i class="fas fa-tv"></i>
+			</a>
 		</li>
 	</ul>
 </nav>
@@ -31,8 +37,7 @@
 	}
 
 	.nav-link a {
-		font-size: 1.25rem;
-		font-weight: bold;
+		font-size: 1.75rem;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
 		text-decoration: none;
@@ -48,7 +53,7 @@
 	}
 
 	.nav-link a:hover {
-		color: rgb(27, 255, 131);
+		color: #1BFF83;
 	}
 
 	.logo-container {
@@ -69,7 +74,5 @@
 		color: rgb(27, 255, 131);
 	}
 
-	.active {
-		color: red;
-	}
+
 </style>

@@ -1,6 +1,6 @@
-<div class="next-button">
-	<a href={'/PopularMovies2/'}>
-		<button class="button-64" role="button"><span class="text">Next Page</span></button>
+<div data-no-blobity class="next-button">
+	<a data-no-blobity href={'/PopularMovies2/'}>
+		<button data-no-blobity  class="button-64" ><span class="text">more...</span></button>
 	</a>
 </div>
 
