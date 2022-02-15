@@ -61,7 +61,7 @@
 	}
 
 	img {
-		width: 70%;
+		width: 100%;
 		border-radius: 1rem;
 		transition: 200ms ease-in-out;
 		position: relative;

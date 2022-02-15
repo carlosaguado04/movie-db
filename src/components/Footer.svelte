@@ -1,11 +1,11 @@
 <div class="footer">
 	<div class="tmdb">
-		<a href="http://themoviedb.org" target="_blank">
+		<a href="https://themoviedb.org" target="_blank">
 			<span>ALL INFO SOURCED FROM</span>
 			<br />
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink"
+
 				viewBox="0 0 489.04 35.4"
 				><defs
 					><style>

@@ -27,6 +27,7 @@
 		align-items: center;
 		justify-content: space-around;
 		list-style: none;
+		z-index: 999;
 	}
 
 	.nav-link a {
@@ -35,13 +36,14 @@
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
 		text-decoration: none;
+
 	}
 
 	.nav-links {
 		display: flex;
 		width: 30%;
 		justify-content: space-between;
-
+		z-index: 999;
 		list-style: none;
 	}
 

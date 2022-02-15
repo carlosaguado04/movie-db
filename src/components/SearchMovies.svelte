@@ -23,7 +23,7 @@
 			<label
 				in:fly={{ y: -10, duration: 500 }}
 				out:fly={{ y: -10, duration: 500 }}
-				for="search_movie">Search for Movies and TV Shows</label
+				for="search_movie">Search for Movies and Series</label
 			>
 		{/if}
 		<input
@@ -35,7 +35,7 @@
 			class={active ? 'selected' : ''}
 		/>
 		{#if inputValue}
-			<button in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}
+			<button data-no-blobity in:fly={{ duration: 500 }} out:fly={{ duration: 500 }}
 				><i class="fa-solid fa-magnifying-glass" /></button
 			>
 		{/if}
