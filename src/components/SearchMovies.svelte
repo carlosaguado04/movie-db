@@ -5,11 +5,7 @@
 	import { fly } from 'svelte/transition';
 
 	function cancelInactive() {
-		if (inputValue) {
-			active = true;
-		} else {
-			active = false;
-		}
+		active = !!inputValue;
 	}
 
 	function submitSearch() {
@@ -23,8 +19,7 @@
 			<label
 				in:fly={{ y: -10, duration: 500 }}
 				out:fly={{ y: -10, duration: 500 }}
-				>Search for Movies and Series</label
-			>
+				>Search for Movies and Series</label>
 		{/if}
 		<input
 			on:blur={cancelInactive}

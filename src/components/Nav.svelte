@@ -10,17 +10,17 @@
 	<ul class="nav-links">
 		<li  class="nav-link" >
 			<a data-blobity-tooltip="About"   href="/about">
-				<i class="fa-solid fa-info"></i>
+				<ion-icon name="information-circle"></ion-icon>
 			</a>
 		</li>
 		<li class="nav-link">
 			<a data-blobity-tooltip="Movies"  href="/movies">
-				<i class="fa-solid fa-film"></i>
+				<ion-icon name="videocam"></ion-icon>
 			</a>
 		</li>
 		<li class="nav-link">
 			<a data-blobity-tooltip="Series"   href="/series">
-				<i class="fas fa-tv"></i>
+				<ion-icon name="tv"></ion-icon>
 			</a>
 		</li>
 	</ul>
@@ -37,7 +37,7 @@
 	}
 
 	.nav-link a {
-		font-size: 1.75rem;
+		font-size: 2.5rem;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
 		text-decoration: none;
@@ -62,7 +62,7 @@
 	}
 
 	.logo-container a {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		font-weight: bold;
 		font-family: 'Josefin Sans', sans-serif;
 		color: white;
