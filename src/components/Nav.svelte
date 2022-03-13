@@ -1,8 +1,3 @@
-<script>
-
-
-</script>
-
 <nav>
 	<div class="logo-container">
 		<a data-blobity-tooltip="Home" href="/">
